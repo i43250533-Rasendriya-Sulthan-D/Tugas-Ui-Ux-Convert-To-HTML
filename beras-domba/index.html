@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda - Beras Domba | Padi Lestari Nusantara</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/images/Foto/logo.png" alt="Logo Beras Domba" />
+        <div class="brand-text">
+          <span class="brand-name">Beras Domba</span>
+          <span class="brand-sub">Padi Lestari Nusantara</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Beranda</a>
+<a href="cerita-petani.html" class="">Cerita Petani</a>
+<a href="proses-produksi.html" class="">Proses Produksi</a>
+<a href="katalog-produk.html" class="">Katalog Produk</a>
+<a href="tentang-kami.html" class="">Tentang Kami</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" onclick="openSearchModal()" title="Cari Produk" aria-label="Cari">
+          🔍
+        </button>
+        <a href="katalog-produk.html" class="btn btn-primary">Pesan Beras</a>
+        <button class="icon-btn" onclick="openCartModal()" title="Keranjang Pesanan" aria-label="Keranjang">
+          🛒
+          <span class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+  <!-- HERO -->
+  <section class="hero-home">
+    <div class="container hero-grid">
+      <div>
+        <span class="pill-badge">🌾 Panen Terkini • Kualitas Premium Nusantara</span>
+        <h1 class="hero-title">Beras Domba Langsung dari Petani Terbaik Indonesia</h1>
+        <p class="hero-subtitle">
+          Beras organik pilihan dengan budidaya alami ramah lingkungan—pulen, wangi alami, dan kaya nutrisi untuk kesehatan keluarga Anda.
+        </p>
+        <div class="hero-cta">
+          <a href="katalog-produk.html" class="btn btn-primary">Jelajahi Produk →</a>
+          <a href="proses-produksi.html" class="btn btn-amber">Pelajari Proses</a>
+        </div>
+        <div class="hero-metrics">
+          <div>
+            <div class="metric-val">0%</div>
+            <div class="metric-lbl">Residu Kimia Berbahaya</div>
+          </div>
+          <div>
+            <div class="metric-val">95/100</div>
+            <div class="metric-lbl">Indeks Pulen &amp; Kesegaran</div>
+          </div>
+          <div>
+            <div class="metric-val">100%</div>
+            <div class="metric-lbl">Beras Organik Murni</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-float-top">⭐ Sertifikasi Organik SNI</div>
+        <div class="hero-float-left">🌿 Pupuk Kompos Domba</div>
+        <img src="assets/images/Foto/hero-banner.png" alt="Beras Domba Padi Lestari Nusantara" />
+        <div class="hero-float-bottom">✓ Dipanen Segar dari Mitra Petani Lokal</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEUNGGULAN KAMI -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge">MENGAPA BERAS DOMBA</span>
+          <h2 class="section-title">KEUNGGULAN KAMI</h2>
+        </div>
+        <p class="section-desc">
+          Menjaga standar mutu tertinggi mulai dari pemilihan benih unggul hingga pengemasan higienis siap santap.
+        </p>
+      </div>
+
+      <div class="grid-4">
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Kualitas Terjamin</h3>
+          <p>Ditanam di lahan subur bebas pestisida sintetis dengan pengawasan mutu ketat di setiap tahap panen.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3>Proses Higienis</h3>
+          <p>Penggilingan presisi modern dan penyortiran optik menjamin butiran bersih, utuh, serta bebas batu atau sekam.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏷️</div>
+          <h3>Harga Kompetitif</h3>
+          <p>Langsung dari jaringan petani mitra tanpa rantai tengkulak panjang sehingga harga adil bagi semua.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <h3>Pengiriman Resmi</h3>
+          <p>Kemasan kedap udara berlapis dikirim langsung oleh armada terpercaya agar kesegaran beras terjaga.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOROTAN KOLEKSI PRODUK TERLARIS -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge amber">PILIHAN KELUARGA INDONESIA</span>
+          <h2 class="section-title">Sorotan Koleksi Produk Terlaris</h2>
+        </div>
+        <a href="katalog-produk.html" style="font-weight:700; color:#133A27; font-size:14px;">Lihat Semua Varian Beras →</a>
+      </div>
+
+      <div class="grid-3">
+        <!-- Card 1: 2.5kg -->
+        <div class="product-card">
+          <div class="product-thumb">
+            <span class="product-tag">Best Seller</span>
+            <img src="assets/images/Foto/products/prod_1794227283.png" alt="Beras Domba 2.5kg" />
+          </div>
+          <div class="product-body">
+            <div class="product-meta">✓ Sertifikasi Organik SNI</div>
+            <h3 class="product-title">Beras Domba</h3>
+            <p class="product-desc">Beras pandan wangi pilihan, pulen alami, dan beraroma harum pandan segar saat dimasak.</p>
+            <div class="product-specs">
+              <span class="spec-pill">Pulen Harum Alami</span>
+              <span class="spec-pill">Segar Simpan 6 Bln</span>
+            </div>
+            <span class="pack-size">2.5kg</span>
+            <div class="product-footer">
+              <div>
+                <span class="price-label">Harga 2.5kg</span>
+                <span class="price-value">Rp 44.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="addToCart('bd-2.5')">🛒 Pesan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: 3kg -->
+        <div class="product-card">
+          <div class="product-thumb">
+            <span class="product-tag amber">Favorit Keluarga</span>
+            <img src="assets/images/Foto/products/prod_1794227388.png" alt="Beras Domba 3kg" />
+          </div>
+          <div class="product-body">
+            <div class="product-meta">✓ Tekstur Lembut Ramah Cerna</div>
+            <h3 class="product-title">Beras Domba</h3>
+            <p class="product-desc">Beras premium dengan tekstur ekstra pulen dan butiran utuh, ideal untuk hidangan keluarga harian.</p>
+            <div class="product-specs">
+              <span class="spec-pill">Kadar Amilosa Rendah</span>
+              <span class="spec-pill">Bebas Pengawet</span>
+            </div>
+            <span class="pack-size">3kg</span>
+            <div class="product-footer">
+              <div>
+                <span class="price-label">Harga 3kg</span>
+                <span class="price-value">Rp 45.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="addToCart('bd-3')">🛒 Pesan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: 5kg -->
+        <div class="product-card">
+          <div class="product-thumb">
+            <span class="product-tag amber">Favorit Keluarga</span>
+            <img src="assets/images/Foto/products/prod_1794227432.png" alt="Beras Domba 5kg" />
+          </div>
+          <div class="product-body">
+            <div class="product-meta">✓ Diet Diabetes &amp; Kebugaran</div>
+            <h3 class="product-title">Beras Domba</h3>
+            <p class="product-desc">Beras organik bebas pestisida kimia, kaya nutrisi, dan sangat baik untuk gaya hidup sehat Anda.</p>
+            <div class="product-specs">
+              <span class="spec-pill">GI Rendah 54</span>
+              <span class="spec-pill">Kaya Antioksidan</span>
+            </div>
+            <span class="pack-size">5kg</span>
+            <div class="product-footer">
+              <div>
+                <span class="price-label">Harga 5kg</span>
+                <span class="price-value">Rp 70.500</span>
+              </div>
+              <button class="btn btn-primary" onclick="addToCart('bd-5')">🛒 Pesan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAMPAK & TESTIMONI PETANI -->
+  <section class="section section-dark">
+    <div class="container impact-grid">
+      <div>
+        <span class="pill-badge" style="background:rgba(255,255,255,0.12); color:#F5D076;">DAMPAK EKOSISTEM REGENERATIF</span>
+        <h2 class="section-title" style="margin-bottom:16px;">Kebaikan Nyata untuk Bumi &amp; Martabat Petani</h2>
+        <p style="color:rgba(255,255,255,0.82); font-size:15px;">
+          Sistem integrasi ternak domba dan pertanian padi mengembalikan kesuburan tanah secara alami sekaligus meningkatkan kesejahteraan petani mitra secara berkelanjutan.
+        </p>
+
+        <div class="impact-stats">
+          <div class="impact-stat-box">
+            <strong>850+</strong>
+            <span>Hektar Lahan Sehat Terkelola</span>
+          </div>
+          <div class="impact-stat-box">
+            <strong>620+</strong>
+            <span>Petani Mitra Sejahtera</span>
+          </div>
+          <div class="impact-stat-box">
+            <strong>0%</strong>
+            <span>Limbah Kimia Berbahaya</span>
+          </div>
+        </div>
+
+        <a href="cerita-petani.html" style="color:#F5D076; font-weight:700; font-size:14px;">Baca Selengkapnya Kisah Petani Beras Domba →</a>
+      </div>
+
+      <div class="quote-card">
+        <div class="quote-mark">“</div>
+        <p class="quote-text">
+          “Sejak beralih menggunakan pupuk kompos alami dari ternak domba bersama Beras Domba, tanah sawah kami kembali gembur dan hasil panen jauh lebih berkualitas. Harga beli gabah yang adil membuat keluarga kami sangat terbantu.”
+        </p>
+        <div class="quote-author">
+          <img src="assets/images/Foto/farmers/pak-obed.png" alt="Pak Obed" />
+          <div>
+            <strong style="display:block; font-size:15px;">Pak Obed</strong>
+            <span style="font-size:12.5px; color:#58665E;">Petani Mitra • Bondowoso, Jawa Timur</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <div style="max-width:600px;">
+          <span class="pill-badge" style="background:#fff; color:#8A5A00; margin-bottom:10px;">MULAI HIDUP LEBIH SEHAT</span>
+          <h2 style="font-size:28px; font-weight:800; color:#16221B; margin-bottom:8px;">Waktunya Beralih ke Beras Alami Bernutrisi Tinggi</h2>
+          <p style="font-size:14.5px; color:#58665E;">
+            Rasakan perbedaan nasi pulen harum alami tanpa pemutih, tanpa pengawet, dan bebas residu kimia untuk hidangan terbaik keluarga Anda.
+          </p>
+        </div>
+        <a href="katalog-produk.html" class="btn btn-primary" style="padding:14px 28px;">🛒 Pesan Beras Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom:16px;">
+            <img src="assets/images/Foto/logo.png" alt="Logo Beras Domba" />
+            <div class="brand-text">
+              <span class="brand-name">Beras Domba</span>
+              <span class="brand-sub">Padi Lestari Nusantara</span>
+            </div>
+          </a>
+          <p style="font-size:13.5px; color:#58665E; max-width:340px; margin-bottom:18px;">
+            Pionir beras organik regeneratif berbasis integrasi domba-padi Nusantara. Menghadirkan bulir pulen berkualitas tinggi dari ekosistem sawah alami yang bebas residu kimia.
+          </p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <span class="spec-pill">✓ SNI Organik</span>
+            <span class="spec-pill">✓ Kementan RI</span>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navigasi Produk</h4>
+          <ul>
+            <li><a href="katalog-produk.html">Beras Domba 2.5kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 3kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 5kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 10kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 25kg</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Edukasi &amp; Proses</h4>
+          <ul>
+            <li><a href="proses-produksi.html">Metode Silvopasture</a></li>
+            <li><a href="proses-produksi.html">Kompos Domba Alami</a></li>
+            <li><a href="cerita-petani.html">Mitra Petani Cianjur</a></li>
+            <li><a href="tentang-kami.html">Sertifikasi &amp; Uji Lab</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>📍 Lahan Pertanian: Bondowoso, Jawa Timur | Kantor: Tengah, Bondowoso</span>
+        <span>© 2023 CV Traktakan. Hak Cipta Dilindungi.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL KERANJANG -->
+  <div id="cartModal" class="modal-backdrop" onclick="if(event.target===this) closeCartModal()">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <h3 style="font-size:20px; font-weight:800; color:#133A27;">Keranjang Pesanan</h3>
+        <button class="qty-btn" onclick="closeCartModal()">✕</button>
+      </div>
+      <div id="cartItemsContainer"></div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin:20px 0; font-size:17px;">
+        <span>Total Pembayaran</span>
+        <strong id="cartTotalAmount" style="color:#133A27;">Rp 0</strong>
+      </div>
+      <button class="btn btn-primary" style="width:100%;" onclick="checkoutWhatsApp()">Konfirmasi Pesanan Sekarang</button>
+    </div>
+  </div>
+
+  <!-- MODAL PENCARIAN -->
+  <div id="searchModal" class="modal-backdrop" onclick="if(event.target===this) closeSearchModal()">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+        <h3 style="font-size:18px; font-weight:800; color:#133A27;">Cari Varian Beras Domba</h3>
+        <button class="qty-btn" onclick="closeSearchModal()">✕</button>
+      </div>
+      <input id="searchInput" type="text" placeholder="Ketik ukuran (misal: 5kg, 25kg, organik)..." oninput="filterSearchResults(this.value)" style="width:100%; padding:12px 16px; border:1px solid #E4E7E2; border-radius:12px; margin-bottom:14px; font-family:inherit;" />
+      <div id="searchResults"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+  
+</body>
+</html>

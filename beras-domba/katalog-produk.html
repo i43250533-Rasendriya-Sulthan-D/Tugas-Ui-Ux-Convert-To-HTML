@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katalog Produk - Beras Domba | Padi Lestari Nusantara</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/images/Foto/logo.png" alt="Logo Beras Domba" />
+        <div class="brand-text">
+          <span class="brand-name">Beras Domba</span>
+          <span class="brand-sub">Padi Lestari Nusantara</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="">Beranda</a>
+<a href="cerita-petani.html" class="">Cerita Petani</a>
+<a href="proses-produksi.html" class="">Proses Produksi</a>
+<a href="katalog-produk.html" class="active">Katalog Produk</a>
+<a href="tentang-kami.html" class="">Tentang Kami</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" onclick="openSearchModal()" title="Cari Produk" aria-label="Cari">
+          🔍
+        </button>
+        <a href="katalog-produk.html" class="btn btn-primary">Pesan Beras</a>
+        <button class="icon-btn" onclick="openCartModal()" title="Keranjang Pesanan" aria-label="Keranjang">
+          🛒
+          <span class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="hero-home" style="padding:44px 0 36px;">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+        <div style="font-size:12.5px; color:#58665E;">
+          <a href="index.html">Beranda</a> / <strong>Katalog Produk Beras</strong>
+        </div>
+        <span class="pill-badge amber" style="margin-bottom:0;">🌾 Musim Panen Rendeng 2026 • Stok Mingguan Segar</span>
+      </div>
+
+      <span style="font-size:12px; font-weight:800; letter-spacing:0.08em; color:#8A5A00; text-transform:uppercase;">KURASI BERAS DOMBA</span>
+      <h1 class="section-title" style="font-size:38px; margin:6px 0 12px;">Produk Beras Organik Beras Domba</h1>
+      <p style="color:#58665E; max-width:650px; font-size:15px;">
+        Temukan beras berkualitas tinggi langsung dari petani lokal terbaik untuk setiap kebutuhan hidangan keluarga Anda.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:36px;">
+    <div class="container">
+      <!-- Filter & Sort Bar -->
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; margin-bottom:28px;">
+        <div style="display:flex; gap:8px; flex-wrap:wrap;" id="filterButtons">
+          <button class="btn btn-primary filter-btn" data-filter="all" onclick="filterCatalog('all', this)">✓ Semua Varian</button>
+          <button class="btn btn-outline filter-btn" data-filter="small" onclick="filterCatalog('small', this)">Kemasan Harian (2.5kg - 5kg)</button>
+          <button class="btn btn-outline filter-btn" data-filter="large" onclick="filterCatalog('large', this)">Kemasan Besar (10kg - 25kg)</button>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:10px;">
+          <label for="sortSelect" style="font-size:13px; color:#58665E; font-weight:600;">Urutkan:</label>
+          <select id="sortSelect" onchange="sortCatalog(this.value)" style="padding:9px 14px; border-radius:10px; border:1px solid var(--border); font-family:inherit; font-weight:600;">
+            <option value="default">Terpopuler</option>
+            <option value="price-asc">Harga Terendah</option>
+            <option value="price-desc">Harga Tertinggi</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid-3" id="catalogGrid"></div>
+
+      <!-- B2B Horeka Banner -->
+      <div style="background:#F4F5F2; border-radius:24px; padding:40px; margin-top:56px; display:grid; grid-template-columns:1.2fr 0.8fr; gap:32px; align-items:center;">
+        <div>
+          <span class="pill-badge">🤝 Kemitraan B2B &amp; Horeka</span>
+          <h2 style="font-size:28px; font-weight:800; color:#133A27; margin-bottom:12px;">
+            Pasokan Beras Karung 25kg untuk Restoran, Hotel &amp; Katering Sehat
+          </h2>
+          <p style="color:#58665E; font-size:14.5px; margin-bottom:20px;">
+            Tingkatkan kepuasan pelanggan restoran Anda dengan bulir beras konsisten yang pulen tanpa patahan berlebih. Nikmati kepastian harga kontrak panen, pengiriman terjadwal, dan sertifikat uji laboratorium bebas residu pestisida di setiap kiriman.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:24px;">
+            <span class="spec-pill" style="background:#fff;">📦 Kemasan Karung Tebal 10kg &amp; 25kg</span>
+            <span class="spec-pill" style="background:#fff;">🔬 Uji Bebas Logam Berat &amp; Kimia</span>
+            <span class="spec-pill" style="background:#fff;">🎁 Sample Tester 1kg Gratis</span>
+          </div>
+          <button class="btn btn-primary" onclick="addToCart('bd-25')">Ajukan Penawaran B2B / Pesan 25kg</button>
+        </div>
+
+        <div style="position:relative;">
+          <img src="assets/images/Foto/products/prod_1794227534.png" alt="Pasokan Beras Karung 25kg" style="border-radius:20px; box-shadow:var(--shadow-md); width:100%; height:290px; object-fit:cover;" />
+          <div style="position:absolute; bottom:-14px; left:20px; background:#fff; padding:12px 18px; border-radius:14px; box-shadow:var(--shadow-sm); border:1px solid var(--border);">
+            <span style="font-size:11px; color:#58665E; display:block;">KAPASITAS PASOK</span>
+            <strong style="font-size:16px; color:#133A27;">&gt; 40 Ton / Bulan</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom:16px;">
+            <img src="assets/images/Foto/logo.png" alt="Logo Beras Domba" />
+            <div class="brand-text">
+              <span class="brand-name">Beras Domba</span>
+              <span class="brand-sub">Padi Lestari Nusantara</span>
+            </div>
+          </a>
+          <p style="font-size:13.5px; color:#58665E; max-width:340px; margin-bottom:18px;">
+            Pionir beras organik regeneratif berbasis integrasi domba-padi Nusantara. Menghadirkan bulir pulen berkualitas tinggi dari ekosistem sawah alami yang bebas residu kimia.
+          </p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <span class="spec-pill">✓ SNI Organik</span>
+            <span class="spec-pill">✓ Kementan RI</span>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navigasi Produk</h4>
+          <ul>
+            <li><a href="katalog-produk.html">Beras Domba 2.5kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 3kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 5kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 10kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 25kg</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Edukasi &amp; Proses</h4>
+          <ul>
+            <li><a href="proses-produksi.html">Metode Silvopasture</a></li>
+            <li><a href="proses-produksi.html">Kompos Domba Alami</a></li>
+            <li><a href="cerita-petani.html">Mitra Petani Cianjur</a></li>
+            <li><a href="tentang-kami.html">Sertifikasi &amp; Uji Lab</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>📍 Lahan Pertanian: Bondowoso, Jawa Timur | Kantor: Tengah, Bondowoso</span>
+        <span>© 2023 CV Traktakan. Hak Cipta Dilindungi.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL KERANJANG -->
+  <div id="cartModal" class="modal-backdrop" onclick="if(event.target===this) closeCartModal()">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <h3 style="font-size:20px; font-weight:800; color:#133A27;">Keranjang Pesanan</h3>
+        <button class="qty-btn" onclick="closeCartModal()">✕</button>
+      </div>
+      <div id="cartItemsContainer"></div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin:20px 0; font-size:17px;">
+        <span>Total Pembayaran</span>
+        <strong id="cartTotalAmount" style="color:#133A27;">Rp 0</strong>
+      </div>
+      <button class="btn btn-primary" style="width:100%;" onclick="checkoutWhatsApp()">Konfirmasi Pesanan Sekarang</button>
+    </div>
+  </div>
+
+  <!-- MODAL PENCARIAN -->
+  <div id="searchModal" class="modal-backdrop" onclick="if(event.target===this) closeSearchModal()">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+        <h3 style="font-size:18px; font-weight:800; color:#133A27;">Cari Varian Beras Domba</h3>
+        <button class="qty-btn" onclick="closeSearchModal()">✕</button>
+      </div>
+      <input id="searchInput" type="text" placeholder="Ketik ukuran (misal: 5kg, 25kg, organik)..." oninput="filterSearchResults(this.value)" style="width:100%; padding:12px 16px; border:1px solid #E4E7E2; border-radius:12px; margin-bottom:14px; font-family:inherit;" />
+      <div id="searchResults"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+  
+  <script>
+    let currentFilter = 'all';
+    let currentSort = 'default';
+
+    function renderCatalog() {
+      const grid = document.getElementById('catalogGrid');
+      let list = [...PRODUCTS];
+
+      if (currentFilter === 'small') {
+        list = list.filter(p => ['2.5kg', '3kg', '5kg'].includes(p.size));
+      } else if (currentFilter === 'large') {
+        list = list.filter(p => ['10kg', '25kg'].includes(p.size));
+      }
+
+      if (currentSort === 'price-asc') {
+        list.sort((a, b) => a.price - b.price);
+      } else if (currentSort === 'price-desc') {
+        list.sort((a, b) => b.price - a.price);
+      }
+
+      grid.innerHTML = list.map(p => `
+        <div class="product-card">
+          <div class="product-thumb">
+            <span class="product-tag ${p.badgeClass}">${p.badge}</span>
+            <img src="${p.img}" alt="${p.name} ${p.size}" />
+          </div>
+          <div class="product-body">
+            <div class="product-meta">✓ ${p.meta}</div>
+            <h3 class="product-title">${p.name}</h3>
+            <p class="product-desc">${p.desc}</p>
+            <div class="product-specs">
+              ${p.specs.map(s => `<span class="spec-pill">${s}</span>`).join('')}
+            </div>
+            <span style="font-size:11px; color:#58665E; font-weight:700; margin-bottom:4px;">PILIH KEMASAN</span>
+            <span class="pack-size">${p.size}</span>
+            <div class="product-footer">
+              <div>
+                <span class="price-label">Harga ${p.size}</span>
+                <span class="price-value">${formatRupiah(p.price)}</span>
+              </div>
+              <button class="btn btn-primary" onclick="addToCart('${p.id}')">🛒 Pesan</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterCatalog(filter, btnEl) {
+      currentFilter = filter;
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('btn-primary');
+        b.classList.add('btn-outline');
+      });
+      btnEl.classList.remove('btn-outline');
+      btnEl.classList.add('btn-primary');
+      renderCatalog();
+    }
+
+    function sortCatalog(val) {
+      currentSort = val;
+      renderCatalog();
+    }
+
+    document.addEventListener('DOMContentLoaded', renderCatalog);
+  </script>
+
+</body>
+</html>

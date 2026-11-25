@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cerita Petani - Beras Domba | Padi Lestari Nusantara</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/images/Foto/logo.png" alt="Logo Beras Domba" />
+        <div class="brand-text">
+          <span class="brand-name">Beras Domba</span>
+          <span class="brand-sub">Padi Lestari Nusantara</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="">Beranda</a>
+<a href="cerita-petani.html" class="active">Cerita Petani</a>
+<a href="proses-produksi.html" class="">Proses Produksi</a>
+<a href="katalog-produk.html" class="">Katalog Produk</a>
+<a href="tentang-kami.html" class="">Tentang Kami</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" onclick="openSearchModal()" title="Cari Produk" aria-label="Cari">
+          🔍
+        </button>
+        <a href="katalog-produk.html" class="btn btn-primary">Pesan Beras</a>
+        <button class="icon-btn" onclick="openCartModal()" title="Keranjang Pesanan" aria-label="Keranjang">
+          🛒
+          <span class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+  <section class="story-hero">
+    <div class="container">
+      <span class="pill-badge" style="background:rgba(255,255,255,0.15); color:#F5D076;">JEJAK TANGAN PETANI NUSANTARA</span>
+      <h1 style="font-size:42px; font-weight:800; margin-bottom:14px;">Cerita di Balik Setiap Butir Beras</h1>
+      <p style="max-width:640px; margin:0 auto; color:rgba(255,255,255,0.9); font-size:16px;">
+        Dedikasi, kearifan lokal, dan kerja keras para petani yang merawat ekosistem sawah Nusantara demi menghadirkan pangan sehat bagi keluarga Indonesia.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:44px;">
+        <h2 class="section-title" style="margin-bottom:8px;">PILAR UTAMA BERAS DOMBA</h2>
+        <p style="color:#58665E; font-size:14.5px;">Para sosok penggerak pertanian organik regeneratif yang menjadi jantung kualitas Beras Domba.</p>
+      </div>
+
+      <!-- Pak Obed -->
+      <div class="farmer-card">
+        <div class="farmer-photo">
+          <img src="assets/images/Foto/farmers/pak-obed.png" alt="Pak Obed" />
+          <span class="farmer-badge">Petani Senior • Lahan Organik</span>
+        </div>
+        <div>
+          <span style="font-size:12px; font-weight:700; color:#8A5A00; text-transform:uppercase;">Mitra Petani Generasi Kedua</span>
+          <h3 style="font-size:24px; font-weight:800; color:#133A27; margin-top:4px;">Pak Obed</h3>
+          <div class="farmer-quote-box">
+            “Setiap butir beras adalah hasil doa, kesabaran, dan kerja keras kami di bawah matahari.”
+          </div>
+        </div>
+      </div>
+
+      <!-- Ibu Wen -->
+      <div class="farmer-card reverse">
+        <div>
+          <span style="font-size:12px; font-weight:700; color:#8A5A00; text-transform:uppercase;">Pengelola Kompos &amp; Pembibitan</span>
+          <h3 style="font-size:24px; font-weight:800; color:#133A27; margin-top:4px;">Ibu Wen</h3>
+          <div class="farmer-quote-box">
+            “Menjaga kesuburan tanah ini adalah amanah warisan untuk kelangsungan hidup anak cucu.”
+          </div>
+        </div>
+        <div class="farmer-photo">
+          <img src="assets/images/Foto/farmers/farmer_1794228820.png" alt="Ibu Wen" />
+          <span class="farmer-badge" style="background:#8A5A00;">Spesialis Kompos Organik</span>
+        </div>
+      </div>
+
+      <!-- Pak Hendra -->
+      <div class="farmer-card">
+        <div class="farmer-photo">
+          <img src="assets/images/Foto/farmers/farmer_1794228873.png" alt="Pak Hendra" />
+          <span class="farmer-badge">Koordinator Integrasi Silvopasture</span>
+        </div>
+        <div>
+          <span style="font-size:12px; font-weight:700; color:#8A5A00; text-transform:uppercase;">Inovator Pertanian Terpadu</span>
+          <h3 style="font-size:24px; font-weight:800; color:#133A27; margin-top:4px;">Pak Hendra</h3>
+          <div class="farmer-quote-box">
+            “Ketika tanah dirawat dengan penuh kasih, alam akan membalasnya dengan berkat melimpah.”
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEHIDUPAN DI SAWAH -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="grid-2" style="align-items:center; margin-bottom:48px;">
+        <img src="assets/images/Foto/production/tahap-1.png" alt="Kehidupan di Sawah Sejak Fajar" style="border-radius:22px; box-shadow:var(--shadow-md); height:320px; width:100%; object-fit:cover;" />
+        <div>
+          <span class="pill-badge">HARMONI ALAM &amp; TRADISI</span>
+          <h2 class="section-title" style="margin-bottom:16px;">Kehidupan di Sawah &amp; Dedikasi Sejak Fajar</h2>
+          <p style="color:#58665E; margin-bottom:14px; font-size:14.5px;">
+            Sebelum matahari terbit sepenuhnya di ufuk timur, para petani mitra kami telah menapaki pematang sawah. Mereka memeriksa aliran irigasi alami, memastikan kelembapan tanah terjaga, serta merawat tanaman padi tanpa sedikit pun bahan kimia sintetis.
+          </p>
+          <p style="color:#58665E; margin-bottom:16px; font-size:14.5px;">
+            Melalui siklus terpadu antara peternakan domba dan lahan persawahan, limbah organik diolah menjadi pupuk kompos kaya mikroorganisme yang menyuburkan tanah secara alami dan ramah lingkungan.
+          </p>
+          <strong style="color:#133A27; font-size:13.5px;">— Komunitas Petani Padi Lestari Nusantara</strong>
+        </div>
+      </div>
+
+      <div style="background:#fff; border-radius:22px; padding:36px; border:1px solid var(--border);">
+        <span class="pill-badge amber">EKONOMI BERKEADILAN</span>
+        <h3 style="font-size:24px; font-weight:800; color:#133A27; margin-bottom:12px;">Kemitraan yang Berkelanjutan &amp; Sejahtera</h3>
+        <p style="color:#58665E; font-size:14.5px; margin-bottom:10px;">
+          Kami menerapkan skema kemitraan langsung yang transparan untuk memutus rantai panjang tengkulak. Setiap hasil panen petani dibeli dengan harga kontrak yang adil di atas rata-rata pasar.
+        </p>
+        <p style="color:#58665E; font-size:14.5px;">
+          Dengan membeli Beras Domba, keluarga Anda turut mendukung kemandirian petani lokal sekaligus melestarikan ekosistem pertanian organik Indonesia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PETA PERSEBARAN KOMUNITAS MITRA -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;">
+        <div>
+          <span class="pill-badge">JARINGAN KEMITRAAN</span>
+          <h2 class="section-title" style="margin-bottom:12px;">Peta Persebaran Komunitas Mitra</h2>
+          <p style="color:#58665E; margin-bottom:24px; font-size:14.5px;">
+            Sentra produksi dan kelompok tani mitra Beras Domba tersebar di kawasan pegunungan subur dengan sumber mata air alami.
+          </p>
+
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div class="feature-card" style="padding:18px 20px;">
+              <strong style="color:#133A27; display:block; margin-bottom:4px;">1. Sentra Utama: Bondowoso, Jawa Timur</strong>
+              <span style="font-size:13px; color:#58665E;">Kawasan Traktakan &amp; lereng Ijen-Raung • Pusat Penggilingan &amp; Gudang Utama</span>
+            </div>
+            <div class="feature-card" style="padding:18px 20px;">
+              <strong style="color:#133A27; display:block; margin-bottom:4px;">2. Gugus Tani Lereng Argopuro</strong>
+              <span style="font-size:13px; color:#58665E;">Budidaya padi organik dataran tinggi dengan irigasi mata air pegunungan</span>
+            </div>
+            <div class="feature-card" style="padding:18px 20px;">
+              <strong style="color:#133A27; display:block; margin-bottom:4px;">3. Mitra Petani Cianjur &amp; Delanggu</strong>
+              <span style="font-size:13px; color:#58665E;">Pelestarian benih murni Pandan Wangi &amp; varietas unggul Nusantara</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="assets/images/peta-lokasi.svg" alt="Peta Persebaran Komunitas Mitra" style="border-radius:22px; border:1px solid var(--border); box-shadow:var(--shadow-md);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom:16px;">
+            <img src="assets/images/Foto/logo.png" alt="Logo Beras Domba" />
+            <div class="brand-text">
+              <span class="brand-name">Beras Domba</span>
+              <span class="brand-sub">Padi Lestari Nusantara</span>
+            </div>
+          </a>
+          <p style="font-size:13.5px; color:#58665E; max-width:340px; margin-bottom:18px;">
+            Pionir beras organik regeneratif berbasis integrasi domba-padi Nusantara. Menghadirkan bulir pulen berkualitas tinggi dari ekosistem sawah alami yang bebas residu kimia.
+          </p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <span class="spec-pill">✓ SNI Organik</span>
+            <span class="spec-pill">✓ Kementan RI</span>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navigasi Produk</h4>
+          <ul>
+            <li><a href="katalog-produk.html">Beras Domba 2.5kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 3kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 5kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 10kg</a></li>
+            <li><a href="katalog-produk.html">Beras Domba 25kg</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Edukasi &amp; Proses</h4>
+          <ul>
+            <li><a href="proses-produksi.html">Metode Silvopasture</a></li>
+            <li><a href="proses-produksi.html">Kompos Domba Alami</a></li>
+            <li><a href="cerita-petani.html">Mitra Petani Cianjur</a></li>
+            <li><a href="tentang-kami.html">Sertifikasi &amp; Uji Lab</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>📍 Lahan Pertanian: Bondowoso, Jawa Timur | Kantor: Tengah, Bondowoso</span>
+        <span>© 2023 CV Traktakan. Hak Cipta Dilindungi.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL KERANJANG -->
+  <div id="cartModal" class="modal-backdrop" onclick="if(event.target===this) closeCartModal()">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <h3 style="font-size:20px; font-weight:800; color:#133A27;">Keranjang Pesanan</h3>
+        <button class="qty-btn" onclick="closeCartModal()">✕</button>
+      </div>
+      <div id="cartItemsContainer"></div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin:20px 0; font-size:17px;">
+        <span>Total Pembayaran</span>
+        <strong id="cartTotalAmount" style="color:#133A27;">Rp 0</strong>
+      </div>
+      <button class="btn btn-primary" style="width:100%;" onclick="checkoutWhatsApp()">Konfirmasi Pesanan Sekarang</button>
+    </div>
+  </div>
+
+  <!-- MODAL PENCARIAN -->
+  <div id="searchModal" class="modal-backdrop" onclick="if(event.target===this) closeSearchModal()">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+        <h3 style="font-size:18px; font-weight:800; color:#133A27;">Cari Varian Beras Domba</h3>
+        <button class="qty-btn" onclick="closeSearchModal()">✕</button>
+      </div>
+      <input id="searchInput" type="text" placeholder="Ketik ukuran (misal: 5kg, 25kg, organik)..." oninput="filterSearchResults(this.value)" style="width:100%; padding:12px 16px; border:1px solid #E4E7E2; border-radius:12px; margin-bottom:14px; font-family:inherit;" />
+      <div id="searchResults"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+  
+</body>
+</html>
